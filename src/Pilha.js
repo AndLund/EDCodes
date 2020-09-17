@@ -1,19 +1,4 @@
-
-/**
- * Conjunto ordenado de dados no qual os elementos podem ser inseridos ou removidos a partir de uma extremidade chamada de topo.
- * Uma pilha é uma estrutura de dados em que o acesso é restrito ao elemento recentemente adicionado.
- * É possível dizer que uma pilha é um tipo abstrato de dados baseado no princípio de Last-In, First-Out – LIFO, “o último a entrar é o primeiro a sair”. 
- * As principais operações para implementar uma pilha são: 
- * PUSH: Insere um dado no topo da pilha.
- * POP: Remove um dado do topo da pilha.
- * TOP: Retorna o topo da pilha.
- * ISEMPTY: Verifica se uma pilha está vazia.
- * @author {https://github.com/taniro}
- * @license {https://github.com/taniro/AulaED/blob/master/LICENSE}
- */
-
 class Pilha {
-
 	/**
 	 * Construtor padrão da classe Pilha.
 	 * @param {number} [size = 10] - Tamanho da Pilha. Caso não informado a Pilha terá tamanho 10.
@@ -34,8 +19,7 @@ class Pilha {
 	push(newData) {
 		if (this.isFull()) {
 			throw new Error("Overflow");
-		}
-		else {
+		} else {
 			this.dados[++this.topo] = newData;
 		}
 	}
